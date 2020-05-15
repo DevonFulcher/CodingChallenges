@@ -1,0 +1,2 @@
+# Purpose
+This repo is meant to be a public record of my attempt at getting better at coding challenges that are common in software engineering interviews from companies such as Amazon, Google, and Microsoft.

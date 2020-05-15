@@ -3,8 +3,6 @@
 # search(word):  Returns true or false if the word is found in the trie
 # startsWith(prefix): Returns true or false if any word in the trie begins with prefix
 
-# [“a”,”are”,”as”,”do”,”dot”,”new”,”news”,”no”,”not”,”zen”]
-
 class TrieNode:
     def __init__(self, val):
         self.val = val
