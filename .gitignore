@@ -1,2 +1,4 @@
 *.md
 !README.md
+*.ods
+*.ods#
