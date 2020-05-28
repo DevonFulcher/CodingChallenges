@@ -2,6 +2,8 @@
 
 README source: https://github.com/jwasham/coding-interview-university/edit/master/README.md
 
+Python cheat sheet: https://gto76.github.io/python-cheatsheet/
+
 ## Table of Contents
 
 - [Why use it?](#why-use-it)
