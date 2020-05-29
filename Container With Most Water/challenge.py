@@ -8,6 +8,17 @@ def naiveMaxArea(height):
             greatestArea = max(greatestArea, minHeight * (j - i))
     return greatestArea
 
+def maxArea(height):
+    leftPointer, rightPointer = 0, len(height)-1
+    greatestArea = 0
+    while leftPointer != rightPointer:
+        greatestArea = max(greatestArea, min(height[leftPointer], height[rightPointer])*(rightPointer-leftPointer))
+        if height[leftPointer] < height[rightPointer]:
+            leftPointer += 1
+        else:
+            rightPointer -= 1
+    return greatestArea
+    
 print(naiveMaxArea([1,8,6,2,5,4,8,3,7]))
 print(naiveMaxArea([1,2]))
 
