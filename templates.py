@@ -6,7 +6,7 @@ def binary_search(arr, target):
         mid = (right-left)//2+left
         if target < arr[mid]:
             right = mid
-        else: #arr[mid]>target
+        else:  # arr[mid]>target
             left = mid
 
     return mid

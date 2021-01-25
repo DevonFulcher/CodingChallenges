@@ -1,14 +1,5 @@
 # https://leetcode.com/problems/pascals-triangle/
 
-'''
-[
-     [1],
-    [1,1],
-   [1,2,1],
-  [1,3,3,1],
- [1,4,6,4,1]
-]
-'''
 
 def generate(numRows):
     if numRows == 0:
@@ -25,4 +16,3 @@ def generate(numRows):
         answer.append(currRow)
         previousRow = currRow
     return answer
-
