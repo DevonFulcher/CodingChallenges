@@ -1,4 +1,1 @@
-*.md
-!README.md
-*.ods
-*.ods#
+/.vscode
