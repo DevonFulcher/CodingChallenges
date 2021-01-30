@@ -8,7 +8,7 @@ def generate(numRows):
     previousRow = [1]
     if numRows == 1:
         return answer
-    for i in range(numRows-1):
+    for _ in range(numRows-1):
         currRow = [1]
         for j in range(len(previousRow)-1):
             currRow.append(previousRow[j] + previousRow[j+1])
