@@ -9,4 +9,6 @@ def binary_search(arr, target):
         else:  # arr[mid]>target
             left = mid
 
-    return mid
+    if arr[left] == target:
+        return left
+    return right
