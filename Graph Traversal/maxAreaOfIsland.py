@@ -1,5 +1,3 @@
-# https://leetcode.com/problems/max-area-of-island/
-
 from collections import deque
 
 
@@ -25,17 +23,17 @@ class Solution:
                 possible_neighbors
             ))
 
-        def bfs_max_area(start_i, start_j):
+        def bfs_max_area(i, j):
             island_area = 0
-            queue = deque([(start_i, start_j)])
+            queue = deque([(i, j)])
             while queue:
-                curr_i, curr_j = queue.pop()
-                curr_elem = grid[curr_i][curr_j]
-                if curr_elem != 1 or (curr_i, curr_j) in visited:
+                i, j = queue.pop()
+                curr_elem = grid[i][j]
+                if curr_elem != 1 or (i, j) in visited:
                     continue
                 island_area += 1
-                visited.add((curr_i, curr_j))
-                neighbors = get_neighbors(curr_i, curr_j)
+                visited.add((i, j))
+                neighbors = get_neighbors(i, j)
                 for neighbor in neighbors:
                     queue.appendleft(neighbor)
             return island_area
