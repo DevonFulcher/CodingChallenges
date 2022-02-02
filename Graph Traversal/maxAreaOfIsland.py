@@ -28,8 +28,7 @@ class Solution:
             queue = deque([(i, j)])
             while queue:
                 i, j = queue.pop()
-                curr_elem = grid[i][j]
-                if curr_elem != 1 or (i, j) in visited:
+                if grid[i][j] != 1 or (i, j) in visited:
                     continue
                 island_area += 1
                 visited.add((i, j))
