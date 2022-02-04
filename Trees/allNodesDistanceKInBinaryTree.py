@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
 from collections import deque, defaultdict
+from typing import List
 
 class TreeNode:
     def __init__(self, x):
