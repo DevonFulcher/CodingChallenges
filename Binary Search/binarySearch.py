@@ -11,4 +11,7 @@ def binary_search(arr, target):
 
     if arr[left] == target:
         return left
-    return right
+    elif arr[right] == target:
+        return right
+    else:
+        return -1
