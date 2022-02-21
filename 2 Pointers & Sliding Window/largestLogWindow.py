@@ -12,7 +12,6 @@ most_requested_resource(logs3) # => ('resource_5', 1)
 Reason: resource_5 is accessed at 300
 """
 
-
 from collections import defaultdict
 
 logs1 = [
