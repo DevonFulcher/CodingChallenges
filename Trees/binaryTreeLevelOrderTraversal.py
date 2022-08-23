@@ -29,3 +29,16 @@ def levelOrder(root: TreeNode) -> list[list[int]]:
         queue.appendleft((node.left, depth+1))
         queue.appendleft((node.right, depth+1))
     return result
+
+def levelOrder2(root: TreeNode) -> list[list[int]]:
+    ans = []
+    queue = deque([(0, root)])
+    while queue:
+        level, curr = queue.pop()
+        if curr:
+            if len(ans)-1 < level:
+                ans.append([])
+            ans[level].append(curr.val)
+            queue.appendleft((level+1, curr.left))
+            queue.appendleft((level+1, curr.right))
+    return ans
