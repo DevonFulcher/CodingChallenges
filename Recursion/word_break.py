@@ -1,3 +1,5 @@
+# https://algo.monster/problems/word_break
+
 from typing import List
 
 def word_break(s: str, words: List[str]) -> bool:
@@ -16,4 +18,3 @@ def word_break(s: str, words: List[str]) -> bool:
         memo[curr] = answer
         return answer
     return dfs("")
-    
